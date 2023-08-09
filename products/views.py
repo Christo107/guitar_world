@@ -7,7 +7,7 @@ from .models import Product
 def all_products(request):
     """ A view to show all products """
 
-    products.objects.all()
+    products = Product.objects.all()
 
     context = {
         'products': products,
