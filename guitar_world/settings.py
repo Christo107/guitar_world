@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%g6ml$dwa1o@h7poadxyh044!ml&#0ycxae!on2acpd$ro$(m)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-christo107-guitarworld-ch5h12k9b9r.ws-eu103.gitpod.io']
+ALLOWED_HOSTS = ['8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -98,7 +98,7 @@ LOGIN_REDIRECT_URL = '/success'
 
 WSGI_APPLICATION = 'guitar_world.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu103.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
