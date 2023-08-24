@@ -42,7 +42,8 @@
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong><a href="/products/{{ item.product.id }}">{{ item.product.name }}</a></strong></p>
+                                        <!--Added product detail link to shopping bag item product name-->
+                                        <p class="my-0"><strong><a href="/products/{{ item.product.id }}" class="text-black">{{ item.product.name }}</a></strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
