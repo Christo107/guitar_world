@@ -43,7 +43,7 @@
                                     </td>
                                     <td class="py-3">
                                         <!--Added product detail link to shopping bag item product name-->
-                                        <p class="my-0"><strong><a href="/products/{{ item.product.id }}" class="text-black">{{ item.product.name }}</a></strong></p>
+                                        <p class="my-0"><strong><a href="/products/{{ item.product.id }}" class="text-blackpython3 manage.py startapp">{{ item.product.name }}</a></strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
@@ -106,7 +106,7 @@
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
