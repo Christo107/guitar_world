@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%g6ml$dwa1o@h7poadxyh044!ml&#0ycxae!on2acpd$ro$(m)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['guitar-world.herokuapp.com', 'localhost'
+ALLOWED_HOSTS = ['guitar-world.herokuapp.com', 'localhost',
                  '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
 
 
