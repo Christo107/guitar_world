@@ -138,7 +138,55 @@
 
     {% block content %}
     {% endblock %}
-
+<!-- footer section elements -->
+<footer>
+    <h2>Where to find us</h2>
+<!--Google maps embedded link-->
+    <div id="footer-text-content-grid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.386593402616!2d-6.297515784034856!3d53.35423588182114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c352b93a0a7%3A0x3c2968f9eb75d67a!2s57%20N%20Circular%20Rd%2C%20Cabra%20East%2C%20Dublin%207%2C%20D07%20A440!5e0!3m2!1sen!2sie!4v1661273834784!5m2!1sen!2sie" title="location of the orchard cafe on google maps" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
+        <div id="footer-address" class="footer-content address">
+<!-- Footer information -->
+                <h3>Our Address</h3>
+            <address>
+                <p>Guitar World</p>
+                <p>59b North Circular Rd.</p>
+                <p>Dublin 7</p>
+                <p>D07 P283</p>
+                <p>Tel: 01 557 58469</p>
+                <p>Email: <a href="mailto:infotestemail@guitarworld.ie">info@guitarworld.ie</a></p>
+            </address>
+        </div>
+        <div id="footer-opening-times" class="footer-content opening-times">
+            <h3>Opening Times</h3>
+            <p>Monday - Thursday: 08:30 - 18:00</p>
+            <p>Friday - Sunday: 08:30 - 16:00</p>
+            <p>Closed Bank Holidays</p>
+        </div>
+        <div id="footer-page-links" class="footer-content page-links">
+            <h3>Sitemap</h3>
+            <a href="{% url 'home' %}"><p>Home</p></a>
+            <a href="{% url 'products' %}"><p>Products</p></a>
+            <a href=""><p>Blog</p></a>
+            <a href=""><p>Placeholder</p></a>
+        </div>
+            <ul class="footer-content social-media-links">
+                <li><p>Follow us on our social networks below<p></li>
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li><p>Copyright Chris O'Dwyer 2023. Created for educational purposes. Not a real guitar shop.<p></li>
+            </ul>
+            
+        </div>
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');

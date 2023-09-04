@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['guitar-world-58b9d23ae102.herokuapp.com', 'localhost',
                  '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
