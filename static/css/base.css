@@ -165,6 +165,16 @@ address a:hover {
     color: #000 !important;
 }
 
+.emphasis {
+    color: white;
+    text-shadow: #000;
+}
+
+.sub-heading {
+    background-color: #ffffff1c;
+    margin-bottom: 12rem;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
