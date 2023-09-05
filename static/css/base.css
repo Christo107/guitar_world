@@ -173,6 +173,12 @@ address a:hover {
     padding-right: 5px;
 }
 
+.emph-black-bg:active,
+.emph-black-bg:focus {
+    background-color: #000;
+    color: #fff !important;
+}
+
 .sub-heading {
     background-color: #ffffff1c;
     margin-bottom: 12rem;
