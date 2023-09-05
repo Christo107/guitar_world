@@ -10,7 +10,7 @@ body {
     font-family: 'Lato';
 }
 
-/* footer styles */
+/* footer styles
 footer {
     width: 100%;
     margin-top: auto;
@@ -107,7 +107,7 @@ address a:hover {
 
 .social-media-links i:hover {
     color: #000;
-}
+} */
 
 /* from Bulma */
 .icon {
@@ -156,8 +156,9 @@ address a:hover {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: #000;
 }
 
 .text-black {
@@ -180,6 +181,10 @@ address a:hover {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.category-highlighted {
+    background-color: #fff !important;
 }
 
 a.category-badge > span.badge:hover {
