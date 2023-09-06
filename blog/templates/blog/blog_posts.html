@@ -2,6 +2,10 @@
 {% load static %}
 
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{& endblock %}
+
 
 {% block content %}
 <div class="container-fluid">
@@ -22,7 +26,7 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt=" {{ post.alt_tag }} ">
                                 {% endif %}
                             </div>
-                            <a href="" class="post-link">
+                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <div>
                                 </div>
