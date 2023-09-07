@@ -96,6 +96,21 @@
             </div>
         </div>
     </div>
+    {% for productreview in productreviews %}
+    <div class="comments" style="padding: 10px;">
+        <p class="font-weight-bold">
+            <!-- The reviewer's's name goes here. -->
+            {{ productreview.name }}
+            <span class=" text-muted font-weight-normal">
+                <!-- The review's created date goes here -->
+                {{ productreview.created_on }}
+            </span> wrote:
+        </p>
+        <!-- The body of the review goes before the | -->
+        {{  productreview.body | linebreaks }}
+    </div>
+    <!-- Our for loop ends here -->
+    {% endfor %}
 {% endblock %}
 
 {% block postloadjs %}
