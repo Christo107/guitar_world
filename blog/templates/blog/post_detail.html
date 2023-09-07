@@ -5,11 +5,11 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <!-- <div class="row">
                 <div class="col-md-6"> -->
-                    <div class="card my-4">
-                        <div class="card-body">
+                    <div class="card blog-ctn">
+                        <div class="card-body p-5">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
@@ -18,7 +18,7 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt=" {{ post.alt_tag }} ">
                                 {% endif %}
                             </div>
-                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h2 class="card-title text-center py-3">{{ post.title }}</h2>
                                 <div>
                                 </div>
                                 <p class="card-text">{{ post.content | safe }}</p>

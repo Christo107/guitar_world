@@ -4,7 +4,7 @@
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
-{& endblock %}
+{% endblock %}
 
 
 {% block content %}
@@ -12,11 +12,11 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
+        <div class="col-12 mt-3 blog-ctn">
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card blog-ctn">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
@@ -27,10 +27,10 @@
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h2 class="card-title text-black text-center py-3">{{ post.title }}</h2>
                                 <div>
                                 </div>
-                                <p class="card-text">{{ post.excerpt }}</p>
+                                <p class="card-text text-black">{{ post.excerpt }}</p>
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}}</p>

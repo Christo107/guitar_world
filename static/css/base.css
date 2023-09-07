@@ -406,8 +406,9 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.top_spacer {
-    margin-top: 10%;
+.blog-ctn {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
 }
 
 /* fixed top navbar only on medium and up */
