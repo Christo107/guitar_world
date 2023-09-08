@@ -10,6 +10,7 @@
                 <div class="col-md-6"> -->
                     <div class="card blog-ctn">
                         <div class="card-body p-5">
+                            <h2 class="card-title text-center py-3">{{ post.title }}</h2>
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
@@ -18,9 +19,6 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt=" {{ post.alt_tag }} ">
                                 {% endif %}
                             </div>
-                                <h2 class="card-title text-center py-3">{{ post.title }}</h2>
-                                <div>
-                                </div>
                                 <p class="card-text">{{ post.content | safe }}</p>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}}</p>
