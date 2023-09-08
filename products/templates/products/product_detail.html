@@ -115,7 +115,7 @@
     {% endfor %}
     {% if user.is_authenticated %}
 
-                <h3>Leave a review:</h3>
+                <h4>Leave a review:</h4>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ review_form | crispy }}
