@@ -113,6 +113,16 @@
                     </div>
     <!-- Our for loop ends here -->
     {% endfor %}
+    {% if user.is_authenticated %}
+
+                <h3>Leave a review:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-black rounded-0 text-uppercase mt-5">Submit</button>
+                </form>
+    {% endif %}
                 </div>
             </div>
         </div>

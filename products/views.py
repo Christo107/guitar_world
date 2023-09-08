@@ -64,10 +64,25 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = ProductReview.objects.all()
+    reviewform = ReviewForm(request.POST)
+
+    if request.method == 'POST':
+        if reviewform.is_valid():
+            reviewform.instance.email = request.user.email
+            reviewform.instance.name = request.user.username
+            review = reviewform.save(commit=False)
+            review.product = product
+            reviewform.save()
+            messages.info(request, "You've left the review successfully")
+        else:
+            review_form = ReviewForm()
+
+            return redirect(reverse('product_detail', args=[product_id]))
 
     context = {
         'product': product,
         'review': reviews,
+        'review_form': ReviewForm()
     }
 
     return render(request, 'products/product_detail.html', context)
