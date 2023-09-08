@@ -238,7 +238,7 @@ input[name='q']::placeholder {
 /* image zoom classes based on https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 
 .zoom {
-    padding: 50px;
+    padding: 20px;
     transition: transform .4s; /* Animation */
     margin: 0 auto;
   }
