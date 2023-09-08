@@ -92,25 +92,32 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
+                    <div class="text-center mt-5"><h3>Customer Reviews</h3>
+                        <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #000000; height: 2px"
+                        />
+                    </div>
+                    {% for productreview in review %}
+                    <div class="comments" style="padding: 10px;">
+                        <p class="font-weight-bold">
+                            <!-- The reviewer's's name goes here. -->
+                            {{ productreview.name }}
+                            <span class=" text-muted font-weight-normal">
+                                <!-- The review's created date goes here -->
+                                {{ productreview.created_on }}
+                            </span> wrote:
+                        </p>
+                        <!-- The body of the review goes before the | -->
+                        {{  productreview.body | linebreaks }}
+                    </div>
+    <!-- Our for loop ends here -->
+    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-    {% for productreview in review %}
-    <div class="comments" style="padding: 10px;">
-        <p class="font-weight-bold">
-            <!-- The reviewer's's name goes here. -->
-            {{ productreview.name }}
-            <span class=" text-muted font-weight-normal">
-                <!-- The review's created date goes here -->
-                {{ productreview.created_on }}
-            </span> wrote:
-        </p>
-        <!-- The body of the review goes before the | -->
-        {{  productreview.body | linebreaks }}
-    </div>
-    <!-- Our for loop ends here -->
-    {% endfor %}
+    
 {% endblock %}
 
 {% block postloadjs %}
