@@ -9,8 +9,15 @@ from products.models import Category
 
 def index(request):
     """ A view to return the index page """
+    page = 'home'
+    categories = Category.objects.all()
 
-    return render(request, 'home/index.html')
+    context = {
+        'categories': categories,
+        'page': page,
+    }
+
+    return render(request, 'home/index.html', context)
 
 
 # class CategoryList(generic.ListView):

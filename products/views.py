@@ -159,5 +159,9 @@ def delete_product(request, product_id):
 
 class CategoryList(generic.ListView):
     model = Category
-    queryset = Category.objects.all()
+    categories = Category.objects.all()
     template_name = 'category_list.html'
+
+    context = {
+        'categories': categories,
+    }
