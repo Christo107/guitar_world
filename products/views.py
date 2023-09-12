@@ -64,7 +64,7 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = ProductReview.objects.all()
+    reviews = ProductReview.objects.filter(product=product)
     reviewform = ReviewForm(request.POST)
 
     if request.method == 'POST':
