@@ -26,35 +26,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Shop by category section -->
-    <div class="container-fluid category-highlighted py-5">
-        <div class="text-center">
-            <h3 class="text-black">
-                Shop by category below:
-            </h3>
-        <!-- <div class="row my-5 align-items-center justify-content-center">      -->
-            <div class="row my-5 align-items-center justify-content-center">
-    {% for category in categories %}
- 
-                <!-- <div class="col-8 col-lg-3 col-xl-2"> -->
-                    <a href="{% url 'products' %}?category={{ category.name }}">
-                        <div class="card p-3">
-                            <img class="card-img-top zoom" src="{{ category.featured_img.url }} alt="category image">
-                            <div class="card-body">
-                                <h5 class="card-title text-black">{{ category.friendly_name }}</h5>
-            
-                            </div>
-                        </div>
-                    </a>
-                <!-- </div> -->
-            </div>
-        <!-- </div> -->
-    {% endfor %}
-        </div>
-    </div>
 <!-- container for highlighted product categories -->
-    <div class="container-fluid category-highlighted py-5">
+    <!-- <div class="container-fluid category-highlighted py-5">
         <div class="text-center">
                 <h3 class="text-black">
                     Shop by category below:
@@ -113,6 +86,58 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+
+
+    <div class="container-fluid">
+        <div class="row">
+    
+            <!-- Shop by category section -->
+            <div class="col-12 pt-5 blog-ctn bg-white">
+                <div class="text-center py-4">
+                    <h3 class="text-black">
+                        Shop by category below:
+                    </h3>
+                </div>
+                <div class="row justify-content-center">
+                    {% for category in categories %}
+                    <div class=" col-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card my-5">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <a href="{% url 'products' %}?category={{ category.name }}" class="post-link">
+                                    {% if "placeholder" in category.featured_image.url %}
+                                    <img class="card-img-top zoom"
+                                        src="/media/noimage.png">
+                                    {% else %}
+                                    <img class="card-img-top zoom" src=" {{ category.featured_image.url }}" alt=" {{ category.friendly_name }} ">
+                                    {% endif %}
+                                </div>
+                                    <p class="card-title text-black text-center py-3">{{ category.friendly_name }}</p>
+                                    <div>
+                                    </div>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}   
+                </div>
+            </div>
+        </div>
+        {% if is_paginated %}
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+    
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+    
 {% endblock %}
