@@ -113,6 +113,11 @@
                     </div>
     <!-- Our for loop ends here -->
     {% endfor %}
+    {% if reviewed %}
+                <div class="alert alert-success" role="alert">
+                    Your review is awaiting approval
+                </div>
+    {% else %}
     {% if user.is_authenticated %}
 
                 <h4>Leave a review:</h4>
@@ -122,6 +127,12 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-black rounded-0 text-uppercase mt-5">Submit</button>
                 </form>
+    {% else %}
+                <h4>Leave a review:</h4>
+                <div>
+                    <button class="btn btn-outline-black rounded-0"><a href="{% url 'account_login' %}">Log in</a></button> or <button class="btn btn-outline-black rounded-0"><a href="{% url 'account_signup' %}">Signup</a></button> to leave a review of this product</a>
+                </div>
+    {% endif %}
     {% endif %}
                 </div>
             </div>

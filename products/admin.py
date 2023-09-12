@@ -24,6 +24,11 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ProductReviewAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'product', 'created_on')
+    Search_fields = ('name', 'email', 'body')
+    actions = ['approve_reviews']
+
+    def approve_reviews(self, request, queryset):
+        queryset.update(approved=True)
 
 
 admin.site.register(Product, ProductAdmin)

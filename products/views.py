@@ -83,6 +83,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'review': reviews,
+        'reviewed': False,
         'review_form': ReviewForm()
     }
 

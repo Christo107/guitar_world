@@ -38,6 +38,7 @@ class ProductReview(models.Model):
     email = models.EmailField()
     body = models.TextField(max_length=200)
     created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
 
     class Meta:
         ordering = ["-created_on"]
