@@ -21,6 +21,7 @@
     {% endblock %}
 
     {% block extra_css %}
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block corejs %}
@@ -168,7 +169,7 @@
                 <a href="" class="text-white me-4">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://github.com/Christo107" class="text-white me-4">
+                <a href="https://github.com/Christo107" target="_blank" class="text-white me-4">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -209,9 +210,44 @@
                 <address>
                     <p><i class="fas fa-home mr-3"></i>59b North Circular Rd.</p>
                     <p><i class="fas fa-home mr-3"></i>Dublin 7</p>
-                    <p><i class="fas fa-envelope mr-3"></i><a href="mailto:infotestemail@guitarworld.ie">info@guitarworld.ie</a></p>
+                    <p><i class="fas fa-envelope mr-3"></i><a href="mailto:infotestemail@guitarworld.ie" class="text-white">info@guitarworld.ie</a></p>
                     <p><i class="fas fa-phone mr-3"></i>01 557 58469</p>
                 </address>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Newsletter</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #ffffff; height: 2px"/>
+            <!-- Mailchimp newsletter subscription embed -->
+                    <div id="mc_embed_shell">
+                        <div id="mc_embed_signup">
+                            <form action="https://gmail.us21.list-manage.com/subscribe/post?u=424b3484c7c156a8feb2c95e1&amp;id=dd7f424a01&amp;f_id=0090e6e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                <div id="mc_embed_signup_scroll">
+                                    <!-- <h4>Sign up to our newsletter</h4> -->
+                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                    <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                                <input type="text" name="b_424b3484c7c156a8feb2c95e1_dd7f424a01" tabindex="-1" value="">
+                            </div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                        <p style="margin: 0px auto;"><a href="http://eepurl.com/izFBIs" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: black; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+
             </div>
             <!-- Grid column -->
           </div>
@@ -234,6 +270,8 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
     {% endblock %}
 
   </body>

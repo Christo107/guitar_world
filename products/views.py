@@ -166,3 +166,16 @@ class CategoryList(generic.ListView):
     context = {
         'categories': categories,
     }
+
+
+@login_required
+def delete_review(request, productreview_id):
+    """ Delete a product review from the item """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    productreview = get_object_or_404(ProductReview, pk=productreview_id)
+    productreview.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('products'))

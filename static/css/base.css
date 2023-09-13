@@ -247,6 +247,15 @@ input[name='q']::placeholder {
     transform: scale(1.2);
   }
 
+
+/* mailchimp custom css */
+#mc_embed_signup {
+    background:#000000;
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+    max-width:95vw;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
