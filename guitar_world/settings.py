@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'tmdm0k30t=#0vbgkk!m0((@gu5#ibe71irj=as@bns!orn^_)2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['guitar-world-58b9d23ae102.herokuapp.com', 'localhost',
                  '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
