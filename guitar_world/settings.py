@@ -118,7 +118,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'guitar_world.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io', 'https://guitar-world-58b9d23ae102.herokuapp.com/']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
