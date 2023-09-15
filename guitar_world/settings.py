@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['guitar-world-58b9d23ae102.herokuapp.com', 'localhost',
                  '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'blog',
+    'contact',
 
     # Other
     'crispy_forms',
@@ -125,16 +126,16 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu10
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # if 'DATABASE_URL' in os.environ:
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+# }
 # else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#         }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
