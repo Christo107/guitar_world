@@ -1,25 +1,33 @@
-# My Film blog
-This website was designed and developed as a film review blog where reviews of the latest films could be posted, with site users able to read the reviews, and registered site users able to comment and click like on the reviews. This allows users to engage with other users in a conversation on the films being reviewed.
+# Guitar World
+This website was designed and developed as an e-commerce store for the sale of musical instruments, predominantly guitars, and their associated accessories.
 
-The website has a simple layout with a homepage containing a list of the latest reviews, along with an actors biography section.
+![Responsive Mockup](./media/readme_images/amiresponsive_screenshot.jpg)
 
-![Responsive Mockup](./media/images/am_i_responsive.jpg)
-
-[Link to my Github Repository](https://github.com/Christo107/MyFilmBlog)
+[Link to my Github Repository](https://github.com/Christo107/guitar_world)
 
 The live website on Github can be accessed at the following link: [View my Live Website on Heroku here](https://guitar-world-58b9d23ae102.herokuapp.com/)
 
 ## CONTENTS
 
-* [Introduction](#my-film-blog)
+* [Introduction](#guitar-world)
 
 * [Sections and Pages](#sections-and-pages)
     *  [Header](#header-and-navbar)
-    *  [Film Review list](#film-review-list)
-    *  [Film Review Detail](#film-review-detail)
+    *  [Hero image and CTA](#)
+    *  [Shop by Category section](#)
     *  [Register Page](#register-page)
     *  [Login Page](#login-page)
     *  [Footer](#footer)
+    *  [Newsletter](#)
+    *  [Contact Us](#)
+    *  [Product Page](#)
+    *  [Product Detail page](#)
+    *  [Shopping Bag](#)
+    *  [Checkout](#)
+    *  [Profile Page](#)
+    *  [Order Summary](#)
+    *  [Blog Post List](#)
+    *  [Blog Post Detail](#)
     *  [Admin](#admin)   
 * [User Experience](#user-experience)
     *  [User Stories](#user-stories)
@@ -46,18 +54,26 @@ The live website on Github can be accessed at the following link: [View my Live 
 
 ### Existing Sections
 - #### **Header**
-    - The header contains the name of the website along with a logo of a section of film strip.
-    - Alongside this on the left of the page, a link for Home, Actors, Register and Login are also present
-    - On the far-right, a tag-line description of what purpose the website serves is shown reading "My take on the latest moview release"
+    - The header contains the name of the website which acts also as a homepage link on desktop version on the far-left of the screen.
+    - in the centre lies a search bar, and the main navigation links to Home, All-Products, Guitars, Accessories and Blog Posts.
+    - On the far-right, links to My Accounts and the shopping Bag total are present.
+    - A banner advertising the amount required to receive free delivery is shown.
 
-![Header Image](./media/images/header.jpg)
+<details>
+<summary>Header Images</summary>
+![Header Image Desktop](./media/readme_images/header_img_desktop.jpg)
+![Header Image Mobile](./media/readme_images/header_mobile1.jpg)
+</details>
 
-- #### **Film Review List**
-    - This section contains the main elements of the homepage, namely a grid of the film reviews currently published on the website.
-    - The Film review list is is displayed in a grid format, with 3 columns and 2 rows. The film reviews are paginated once they reach 6 on the page.
-    - Each card shows an image of the film review, the title, the star rating, cast members, author of the review, date of publication, an excerpt, number of likes
+- #### **Hero Section and CTA**
+    - This section contains the a large hero image of a les paul guitar along with a tagline "Find your dream instrument today" to entice shoppers.
+    - A Call to Action button for Shop Now is also present and brings shoppers directly to the products page.
 
-![Film Review List Image](./media/images/homepage.jpg)
+<details>
+<summary>Hero Image and CTA Section Images</summary>
+![Hero Image and CTA Section Desktop](./media/readme_images/homepage_desktop1.1.jpg)
+![Hero Image and CTA Section Mobile](./media/readme_images/homepage_mobile1.jpg)
+</details>
 
 - #### **Film Review Detail**
     - When a user clicks on the title or excerpt of a particular review, they are brought to the Review Detail page.
