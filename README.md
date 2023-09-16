@@ -333,31 +333,159 @@ The live website on Github can be accessed at the following link: [View my Live 
 ## Testing
 The website was tested for markup and CSS validation along with javascript, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
 Please see screenshots of the results below:
-- [W3C Markup Result](./media/readme_images/HTML%20first%20check.jpg)
-- This validator showed several errors in relation to li items as children of nav element. Unfortunately, i was unable to locate the shown errors in the code in order to fix them before submission.
-- [W3C CSS Validator first run](./media/readme_images/CSS_validator_first.jpg)
-- The CSS validator showed 2 errors to be fixed. These were both fixed for final deployment as shown below:
-- [W3C CSS Validator fixed](./media/readme_images/CSS_validator_fix.jpg)
 
 ### Validator Testing
 - HTML
-    - Before final deployment, no errors were returned when passing through the offical W3C Validator
-- [W3C Validator HTML](./media/images/w3c_homepage_initial_results.jpg)
-- [W3C Validator HTML](./media/images/w3c_homepage_follow_up_results.jpg)
+-[W3C Markup Result](./media/readme_images/HTML%20first%20check.jpg)
+    - This validator showed several errors in relation to li items as children of nav element. Unfortunately, i was unable to locate the shown errors in the code in order to fix them before submission.
 - CSS
-    - Before final deployment, no errors were found when passing through the official W3C Jigsaw CSS Validator
-- [W3C Validator CSS](./media/images/w3c_homepage_css_results.jpg)
+- [W3C CSS Validator first run](./media/readme_images/CSS_validator_first.jpg)
+    - The CSS validator showed 2 errors to be fixed. These were both fixed for final deployment as shown below:
+- [W3C CSS Validator fixed](./media/readme_images/CSS_validator_fix.jpg)
 - Javascript
     - The javascript code was run through jshint to check for any errors. No errors were identified.
 - Python
-    - The python code was run through Pep8 to check for errors. It passed with no errors
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_admin.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_blogurls.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_filmblogurls.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_manage.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_models.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_settings.py.jpg)
-- [PEP8 result](./media/images/pep8%20results/pep8%20linter_views.py.jpg)
+    - The python code was run through Code Institute's Pep8 Linter to check for errors. It passed with no errors apart from the automatically generated auth password validators in Settings.py
+<details><summary>See PEP8 linter results for each file</summary>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/bag_urls.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/bag_views.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/blog_admin.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/blog_models.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/blog_urls.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/blog_views.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_admin.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_forms.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_models.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_signals.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_urls.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/checkout_views.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/guitar_world_settings.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/guitar_world_urls.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/guitar_world_views.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/home_views.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_admin.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_forms.py.jpg)
+</details>
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_models.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_urls.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_views.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/products_widgets.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/profile_forms.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/profile_models.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/profile_urls.py.jpg)
+</details>
+
+<details>
+<summary>See PEP8 linter result</summary>
+
+![PEP8 validator result](./media/readme_images/pep8_validation/profile_views.py.jpg)
+</details>
+</details>
+
 
 ### Responsiveness Testing
 - The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
