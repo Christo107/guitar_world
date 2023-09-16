@@ -503,13 +503,15 @@ Please see screenshots of the results below:
 
 ### Accessibility Testing
 - Multiple tests were run on the website using Lighthouse and A11y Color Contrast Accessibility Validator to examine any accessibility issues. https://color.a11y.com/
+- [Colour Contrast Results](./media/readme_images/colour_contrast_results.jpg)
+
 #### Firefox
 - Firefox's built in colour blindness simulator was used to identify any areas where sufficient colour contrast was not present. No such areas were found.
 
 ### User Story Testing
 - The delivered user stories were manually tested to ensure all acceptance criteria were met
-- ![User Story Manual Testing](./media/images/user_story_testing_pt1.jpg)
-- ![User Story Manual Testing](./media/images/user_story_testing_pt2.jpg)
+- ![User Story Manual Testing](./media)
+- ![User Story Manual Testing](./media)
 
 ## Deployment
 I used Gitpod to develop the website and the site was deployed using Heroku.
@@ -544,31 +546,32 @@ To Fork
 - The fork button is found at the top of the page.
 - The forked project will be in your repositories.
 
-The live link can be found here - https://myfilmblog.herokuapp.com/
+The live link can be found here - https://guitar-world-58b9d23ae102.herokuapp.com/
 
 ## Bugs
 ### Fixed Bugs
-- Actor_Detail page was not loading due to errors in the views and Url patterns code. This was fixed with the aid of Josh from Tutor Support.
+- 
 
 ### Known Bugs
-- Responsiveness on Actor Detail card on smaller devices.
-
+- 
 ## Credits
 
 ### Code
-- Main code based on Code Institute's walkthrough project "I think therefore I blog" with changes made to suit my project
+- The code comprises of code based on Code Institute walkthroughs "Boutique Ado" and "I think therefore I blog" that have been customised to meet the specific requiremnets of the project, alonside custom code and models written by me.
 
 ### Content
 
-- The text content of the website was taken from the Empire Film Review website here : (https://www.empireonline.com/movies/reviews/)
+- The text content of the website was taken from the 
 - The social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
-- Film images sourced from Empire movie reviews website (https://www.empireonline.com/movies/reviews/)
-- Actor images sourced from Wikipedia (https://www.wikipedia.com)
+- Product images and details are taken from the Thomann and Gear4Music websites.
+    - https://www.thomann.de/
+    - https://www.gear4music.com
+- Blog post images and content taken from https://www.guitarnoise.com/
 - Icons sourced from Font Awesome
 
 
 ## Acknowledgements
- - The CI students who peer reviewed my website and gave feedback
- - Josh on Tutor support who helped me overcome a late issue in my website
+ - Roman Rakic for his assistance
+ - 
