@@ -12,22 +12,20 @@ The live website on Github can be accessed at the following link: [View my Live 
 * [Introduction](#guitar-world)
 
 * [Sections and Pages](#sections-and-pages)
-    *  [Header](#header-and-navbar)
-    *  [Hero image and CTA](#)
-    *  [Shop by Category section](#)
+    *  [Header](#header)
+    *  [Hero image and CTA](#hero-section-and-cta)
+    *  [Shop by Category section](#shop-by-category-section)
     *  [Register Page](#register-page)
     *  [Login Page](#login-page)
     *  [Footer](#footer)
-    *  [Newsletter](#)
-    *  [Contact Us](#)
-    *  [Product Page](#)
-    *  [Product Detail page](#)
-    *  [Shopping Bag](#)
-    *  [Checkout](#)
-    *  [Profile Page](#)
-    *  [Order Summary](#)
-    *  [Blog Post List](#)
-    *  [Blog Post Detail](#)
+    *  [Newsletter](#newsletter)
+    *  [Contact Us](#contact-us)
+    *  [Product Page](#product-page)
+    *  [Product Detail page](#product-detail)
+    *  [Shopping Bag](#shopping-bag)
+    *  [Checkout](#checkout)
+    *  [Profile Page](#profile-page)
+    *  [Blog Post List](#blog-posts)
     *  [Admin](#admin)   
 * [User Experience](#user-experience)
     *  [User Stories](#user-stories)
@@ -61,6 +59,7 @@ The live website on Github can be accessed at the following link: [View my Live 
 
 <details>
 <summary>Header Images</summary>
+
 ![Header Image Desktop](./media/readme_images/header_img_desktop.jpg)
 ![Header Image Mobile](./media/readme_images/header_mobile1.jpg)
 </details>
@@ -71,56 +70,166 @@ The live website on Github can be accessed at the following link: [View my Live 
 
 <details>
 <summary>Hero Image and CTA Section Images</summary>
+
 ![Hero Image and CTA Section Desktop](./media/readme_images/homepage_desktop1.1.jpg)
 ![Hero Image and CTA Section Mobile](./media/readme_images/homepage_mobile1.jpg)
 </details>
 
-- #### **Film Review Detail**
-    - When a user clicks on the title or excerpt of a particular review, they are brought to the Review Detail page.
-    - This page contains more information of the review including
-        - Featured Image
-        - Title
-        - Cast
-        - Star Rating
-        - Author
-        - Date and Time of publication
-        - Review text content
-        - YouTube link to trailer
-        - Number of Likes
-        - Number of comments
-        - Comment Form (for registered users only)
-        - Comments (displayed oldest to newest)
+- #### **Shop by Category Section**
+    - A user has the option to click on any of the categories created in the admin for the various products.
+    - This provides the shopper with an alternative way to enter the products pages instead of using the navbar dropdown.
+    - An enticing zoom effect is used on the images of the category to draw the user in.
 
-![Film Review Detail Image top](./media/images/film_review_detail_pt1.jpg)
-![Film Review Detail Image bottom](./media/images/film_review_detail_pt2.jpg)
+<details>
+<summary>Shop By Category Images</summary>
+
+![Shop by category desktop image](./media/readme_images/homepage_desktop1.1.jpg)
+![Shop by category mobile image](./media/readme_images/shopbycategory_mobile.jpg)
+</details>
 
 - #### Register Page
-![Register Page Image](./media/images/signup_page.jpg)
+    - This page allows users to signup to create a profile where their data can be stored for future purchases. 
+    - This uses the allauth features for authorisation
+
+<details>
+<summary>Register page images</summary>
+
+![Register Page Image desktop](./media/readme_images/signuppage_desktop.jpg)
+![Register Page Image mobile](./media/readme_images/signuppage_mobile.jpg)
+</details>
 
 - #### Login Page
-![Login Page Image](./media/images/login_page.jpg)
+        - This page allows already registered users to login to their accounts and access the features.
+
+<details>
+<summary>Login Page Images</summary>
+
+![Login Page Image desktop](./media/readme_images/signinpage_desktop.jpg)
+![Login Page Image mobile](./media/readme_images/signinpage_mobile.jpg)
+</details>
     
 - #### **Footer**
-    - At the bottom of the pages, there is a footer containing the developer's name and a link to the gitHub profile of the developer, in case someone wished to contact the developer or view other projects by them.
+    - At the bottom of the pages, the footer contains a tagline description for the company and links to their Facebook profile along with the developer's github page
+    - It features links to various areas of the website including Home, products, Account and Blog
+    - A link to message the company brings the user to the Contact Us page
+    - Finally, a newsletter signup feature is present using mailchimp to process the email signup process
 
-![Footer section image](./media/images/footer.jpg)
+<details>
+<summary></summary>
+
+![Footer section image desktop](./media/readme_images/homepage_desktop1.2_footer.jpg)
+![Footer section image mobile](./media/readme_images/footer_mobile1.jpg)
+</details>
+
+- #### **Newsletter**
+    - The website utilises the mailchimp mass emailing service in order to communicate information with the shoppers
+    - They are able to signup in the footer section of the website.
+
+<details>
+<summary></summary>
+
+![Newsletter section image mobile](./media/readme_images/footer_mobile1.1.jpg)
+</details>
+
+- #### **Contact Us**
+    - Users are able to send messages to the company via the Contact Us Form
+    - The link to reach this page is contained within the footer of the website called 'Message Us'
+    - This message, if form is validated, is then displayed on the admin side of the website
+    - A future feature is to include a list of message received on the frontend for Admin Users with reply functionality
+
+<details>
+<summary></summary>
+
+![Contact Us section image mobile](./media/readme_images/contactus_mobile.jpg)
+</details>
+
+- #### **Product Page**
+    - Users can navigate to the product pages in a number of ways
+        - Via the navbar All Products>By Price/Rating/Category/All Products
+        - Via the navbar Guitars>Electric/Acoustic/Electric Acoustic/All Guitars
+        - Via the navbar Accessories>Strings/Tuners/All Accessories
+
+<details>
+<summary></summary>
+
+![Product Page section image desktop](./media/readme_images/productpage_desktop1.jpg)
+![Product Page section image mobile](./media/readme_images/productspage_mobile1.jpg)
+</details>
+
+- #### **Product Detail**
+    - By clicking a particular product, users are brought to the product detail page.
+    - This page contains extra information of the product, and ordering functionality.
+    - Registered users can also leave a review of a particular product if they wish.
+
+<details>
+<summary></summary>
+
+![Product Detail section image desktop](./media/readme_images/productdetail_desktop.jpg)
+![Product Detail section image mobile](./media/readme_images/productdetailpage_mobile.jpg)
+</details>
+
+- #### **Shopping Bag**
+    - By clicking add to bag on a product detail page, each item is added to the shopping bag
+    - This can be accessed by clicking the icon in the top right corner of the screen
+    - A summary of the items added to bag are shown including image, description, quantity and price
+
+<details>
+<summary></summary>
+
+![Shopping Bag section image desktop](./media/readme_images/shoppingbag_desktop.jpg)
+![Shopping Bag section image mobile](./media/readme_images/shopping_bag_mobile1.jpg)
+</details>
+
+- #### **Checkout**
+    - Once a user is happy to proceed to paying for the items, they are brough to the secure checkout page.
+    - They are asked to enter details including name, email, address and billing information
+    - Registered users have the option to save details for next purchase if they wish
+
+<details>
+<summary></summary>
+
+![Checkout section image desktop](./media/readme_images/checkout_desktop.jpg)
+![Checkout section image mobile](./media/readme_images/checkout_mobile1.jpg)
+</details>
+
+- #### **Profile**
+    - Registered users are given a profile page which displays their personal information and order history
+
+<details>
+<summary></summary>
+
+![Profile page image desktop](./media/readme_images/myprofilepage_desktop1.jpg)
+</details>
+
+- #### **Blog posts**
+    - Another feature of the website is the Blog section
+    - This contains blog posts uploaded by Admin on relevant music-related stories
+
+<details>
+<summary></summary>
+
+![Blog Posts image desktop](./media/readme_images/blogposts_desktop.jpg)
+![Blog Posts Detail image mobile](./media/readme_images/blogpost_detail_mobile.jpg)
+</details>
+
+- #### **Admin**
+    - The Admin section provides access to superusers to modify many aspects of the website
+    - They have access to the Product pages to add or edit products
+    - Blog Posts can be added or removed as necessary
+    - New product categories can be added or modified
+    - Users and Orders can be tracked and modified also
+
+<details>
+<summary></summary>
+
+![Admin page image desktop](./media/readme_images/adminpage_desktop.jpg)
+</details>
+
 
 ### Future Features
 
-- #### Search Field
-    - I would like to add a search function so that site users can easily find reviews of films they are interested in.
-
-- #### Actor Reviews
-    - Breakdown of reviews based on specific actors. This would show all the reviews on the website that contain a specific actor as part of the cast.
-
-- #### Social account Registration
-    - Register an account with a user's social account for ease of signup and integration.
-
-- #### Cinema Listings
-    - Link to local cinema listings where users can find out where to watch the film in the current review.
-
-- #### Previous comments
-    - Profile page information showing all previous commented reviews by a particular user.
+- #### Blog by Category
+    - I would like to add a category field to the blog posts to enabling searching by subject
 
 ## User Experience
 
@@ -128,50 +237,71 @@ The live website on Github can be accessed at the following link: [View my Live 
 
 #### Client Goals
 - To have an accessible, responsive website that is easy to navigate and encourages users to engage with the content contained within.
-
-#### User Goals
+- To encourage further spending by showing free delivery thresholds if shoppers are under the threshold
 
 ##### Delivered features
-- As a site user I can login to my registered account so that access the comment and like functionality
-- As a site user I can logout of my registered account so that I can **keep my account safe from other users
-- As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
-- As a Site Admin I can create draft posts so that I can finish writing the content later
-- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
-- As a Site User I can view a list of posts so that I can select one to read
-- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular
-- As a Site User I can view a paginated list of posts so that easily select a post to view
-- As a Site User I can click on a post so that I can read the full text
-- As a Site User I can register an account so that I can add posts, comment and like existing posts
-- As a Site User / Admin I can view comments on an individual post so that I can read the replies to a post
-- As a Site User I can leave comments on a post so that I can engage with other users
-- As a Site User I can like or unlike a post so that I can interact with the content
+- **Manage Products**
+    - As a Site Admin I can create, read, update and delete products so that I can manage my store content.
+- **Create Draft Products**
+    - As a Site Admin I can create draft products so that I can finish adding the product at a later time.
+- **Add Blog Posts**
+    - As a Site Admin I can create, read, update and delete blog posts so that I can manage my website content.
+- **Account Registration** 
+    - As a Site User I want to register an account so that I can purchase products and save my information
+- **Login**  
+    - As a site user I can login to my registered account so that I can access complete my orders  on the store and see previous orders on my account.
+- **Logout** 
+    - As a site user I want to logout of my registered account so that I can keep my account safe from other users.
+- **Personal Details**  
+    - As a site user I want to save my personal shopping details securely for future visits to the website.
+- **Review a Product**  
+    - As a Site User I can leave reviews on a product so that I can engage with other users
+- **View Reviews** 
+    - As a Site User / Admin I can view reviews on an individual post so that I can read the replies to a post
+- **View Product List** 
+    - As a Site User I want to view a list of products so that I can select one to purchase or review further details of.
+- **Open a Product Detail page** 
+    - As a Site User I want to click on a product so that I can read the full information on that product.
+- **Product Filter**
+    - As a Site User, I want to filter the selection of products so that I only see products that match a certain criteria.
+- **Product List Pagination**
+    - As a Site User I want to view a paginated list of products so that I can easily select a product to view.
+- **Product Sorting**
+    - As a Site User I can sort the product list using a number of variations e.g. Price, name.
+- **Product Reviews**
+    - As a registered Site User, I want to add reviews to products so that I can tell others about them or ask questions.
+- **View Previous Orders**
+    - As a Site User, I can see my previous orders so I can find out what I ordered and when it will arrive.
+- **Checkout success**
+    - As a site user, I can proceed to purchase the items I wish to buy without barriers
 
 ##### Non-Delivered features
-- As a Site User I can login to my profile so that I can view all my previously created posts
-- As a site user I can bookmark a review so that I can revisit the post at a later date
-- As a site user I can filter the reviews so that I can view only specific reviews based on certain criteria
-- As a site user I can search for where the reviewed film is being shown in my local area so that I can see the film being reviewed and form my own opinion
-- As a site user I can register an account using my social media accounts so that I don't have to create separate login details for the website
-- As a site user I can edit my comments so that I can fix mistakes or add additional content
-- As a site user I can search for specific reviews so that I can quickly find a review of a film
+- **Approve Reviews** 
+    - As a Site Admin I can approve or disapprove Reviews so that I can filter out objectionable comments
+- **Edit Reviews** 
+    - As a Site User I want to edit my reviews on a product so that I fix typos or mistakes
+- **Product Wishlist** 
+    - As a Site User, I can save a particular product to look at later in a wishlist
+
+
 
 ## Design
 
 ### Colour Palette
 
-![Colour palette for the website](./media/images/colour_palette.jpg)
+![Colour palette for the website]()
 
 
 ### Typography
-- Helvetica font used for review content for readability
+- Verdana font used for review content for readability
 - Lato font used for headers and prominent titles
 
 ### Wireframes
 - I designed the website firstly through hand drawn sketches that were then turned into basic wireframes on Figma.
 
-- [Desktop Wireframe](./media/images/homepage_wireframe_dsktp.jpg)
+- [Desktop Wireframe](./media)
 
-- [Mobile Wireframe](./media/images/homepage_wireframe_mobile.jpg)
+- [Mobile Wireframe](./media)
 
 ### Accessibility
 
@@ -195,9 +325,10 @@ The live website on Github can be accessed at the following link: [View my Live 
 - [A11y color contrast validator](https://color.a11y.com/Contrast/)
 - [Favicon.io](https://favicon.io/)
 - [Django]
-- [Cloudinary]
+- [Amazon Web Services](https://aws.amazon.com/)
 - [Bootstrap]
-- [Heroku]
+- [Heroku](https://www.heroku.com)
+- [Canva]
 
 ## Testing
 The website was tested for markup and CSS validation along with javascript, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
