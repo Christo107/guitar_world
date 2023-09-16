@@ -333,8 +333,11 @@ The live website on Github can be accessed at the following link: [View my Live 
 ## Testing
 The website was tested for markup and CSS validation along with javascript, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
 Please see screenshots of the results below:
-- [W3C Markup Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmyfilmblog.herokuapp.com%2F) 
-- [W3C CSS Validator Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmyfilmblog.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [W3C Markup Result](./media/readme_images/HTML%20first%20check.jpg)
+- This validator showed several errors in relation to li items as children of nav element. Unfortunately, i was unable to locate the shown errors in the code in order to fix them before submission.
+- [W3C CSS Validator first run](./media/readme_images/CSS_validator_first.jpg)
+- The CSS validator showed 2 errors to be fixed. These were both fixed for final deployment as shown below:
+- [W3C CSS Validator fixed](./media/readme_images/CSS_validator_fix.jpg)
 
 ### Validator Testing
 - HTML

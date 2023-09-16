@@ -42,21 +42,19 @@
                             <div class="card-body">
                                 <div class="image-container">
                                     <a href="{% url 'products' %}?category={{ category.name }}" class="post-link">
-                                    {% if "placeholder" in category.featured_image.url %}
-                                    <img class="card-img-top zoom"
-                                        src="/media/noimage.png">
-                                    {% else %}
-                                    <img class="card-img-top zoom" src=" {{ category.featured_image.url }}" alt=" {{ category.friendly_name }} ">
-                                    {% endif %}
-                                </div>
-                                    <p class="card-title text-black text-center py-3">{{ category.friendly_name }}</p>
-                                    <div>
-                                    </div>
+                                        {% if "placeholder" in category.featured_image.url %}
+                                        <img class="card-img-top zoom"
+                                         src="/media/noimage.png">
+                                        {% else %}
+                                        <img class="card-img-top zoom" src=" {{ category.featured_image.url }}" alt=" {{ category.friendly_name }} ">
+                                        {% endif %}
                                     </a>
+                                </div>
+                                        <p class="card-title text-black text-center py-3">{{ category.friendly_name }}</p>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}   
+                    {% endfor %}  
                 </div>
             </div>
         </div>
