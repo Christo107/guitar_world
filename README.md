@@ -375,6 +375,7 @@ The website uses a simple clean black and white colour palette which allows the 
 - [Bootstrap]
 - [Heroku](https://www.heroku.com)
 - [Canva]
+- [Stripe](https://www.stripe.com)
 
 ## Testing
 The website was tested for markup and CSS validation along with javascript, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
@@ -556,8 +557,8 @@ Please see screenshots of the results below:
 
 ### User Story Testing
 - The delivered user stories were manually tested to ensure all acceptance criteria were met
-- ![User Story Manual Testing](./media)
-- ![User Story Manual Testing](./media)
+- ![User Story Manual Testing](./media/readme_images/User_story_tests1.png)
+- ![User Story Manual Testing](./media/readme_images/user_story_test2.png)
 
 ## Deployment
 I used Gitpod to develop the website and the site was deployed using Heroku.
@@ -610,6 +611,9 @@ The live link can be found here - https://guitar-world-58b9d23ae102.herokuapp.co
     - Admin should have the functionality to edit and delete reviews on the frontend. This is not working at present.(code removed for submission)
 - **Approve reviews**
     - Admin should have the functionality to approve reviews before they are listed on the frontend. This is not working at present.
+- **Payment Intent Succeeded**
+    - At present, there is an error on stripe for the payment intent succeded.
+    - This appears to relate to the webhooks not functioning correctly and not seeing that an order has already been created.
 ## Credits
 
 ### Code
