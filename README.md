@@ -1,6 +1,13 @@
 # Guitar World
 This website was designed and developed as an e-commerce store for the sale of musical instruments, predominantly guitars, and their associated accessories.
 
+## Audience
+This website can be of interest to a wide variety of consumers between ages 8 to 80. As musical instruments can appeal to such a broad range of ages, I decided to make the website as clean as possible without specific 'genre' styling, as to not discourage any shopper from using the site. The site will be marketed by using social media posts and ad campaigns, along with newsletter signup functionality.
+
+## Market Analysis
+- There are a wide number of competitors in this market, the largest being Thomann, a German based musical instrument company.
+- Othe rsimilar e-cmmerce platforms would be Gear4Music, Muziker, Waltons, Musicmaker and XMusic (the latter 3 being Irish based companies)
+
 ![Responsive Mockup](./media/readme_images/amiresponsive_screenshot.jpg)
 
 [Link to my Github Repository](https://github.com/Christo107/guitar_world)
@@ -10,7 +17,8 @@ The live website on Github can be accessed at the following link: [View my Live 
 ## CONTENTS
 
 * [Introduction](#guitar-world)
-
+    *  [Audience](#audience)
+    *  [Market Analysis](#market-analysis)
 * [Sections and Pages](#sections-and-pages)
     *  [Header](#header)
     *  [Hero image and CTA](#hero-section-and-cta)
@@ -31,7 +39,9 @@ The live website on Github can be accessed at the following link: [View my Live 
     *  [User Stories](#user-stories)
 * [Marketing](#marketing)
     *  [Social Media](#social-media)
+    *  [Newsletter](#newsletter-signup)
 * [Design](#design)
+    *  [Database Schema](#database-schema)
     *  [Colour Palette](#colour-palette)
     *  [Typography](#typography)
     *  [Imagery](#imagery)
@@ -101,7 +111,7 @@ The live website on Github can be accessed at the following link: [View my Live 
 </details>
 
 - #### Login Page
-        - This page allows already registered users to login to their accounts and access the features.
+    - This page allows already registered users to login to their accounts and access the features.
 
 <details>
 <summary>Login Page Images</summary>
@@ -300,7 +310,17 @@ The live website on Github can be accessed at the following link: [View my Live 
 ![Facebook screenshot 1](./media/readme_images/Facebookpage2.jpg)
 </details>
 
+### Newsletter Signup
+- Email newsletters will be a feature of the website using the Mailchimp service to send details of upcoming products and competitions to interested users.
+- The signup section is located in the footer of the website.
+
 ## Design
+
+### Database Schema
+<details><summary>Click to see Database schema PDF</summary>
+
+[Database Schema](./media/readme_docs/Database%20Schema.pdf)
+</details>
 
 ### Colour Palette
 
