@@ -278,7 +278,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #0c6977; /* text-info */
 }
 
 /* Product Form */
