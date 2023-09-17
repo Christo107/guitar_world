@@ -111,12 +111,6 @@
                         <!-- The body of the review goes before the | -->
                         {{  productreview.body | linebreaks }}
                     </div>
-                    {% if user.is_superuser %}
-                    <div>
-                        <button class="btn"><a href="">Edit Review</a></button>
-                        <button class="btn"><a id="remove_{{ item.item_id }}">Delete Review</a></button>
-                    </div>
-                    {% endif %}
     <!-- Our for loop ends here -->
     {% endfor %}
     {% if reviewed %}
