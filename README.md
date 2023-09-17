@@ -317,6 +317,7 @@ The live website on Github can be accessed at the following link: [View my Live 
 ## Design
 
 ### Database Schema
+- I used ElephantSQL to build the Database
 <details><summary>Click to see Database schema PDF</summary>
 
 [Database Schema](./media/readme_docs/Database%20Schema.pdf)
@@ -376,6 +377,7 @@ The website uses a simple clean black and white colour palette which allows the 
 - [Heroku](https://www.heroku.com)
 - [Canva]
 - [Stripe](https://www.stripe.com)
+- [ElephantSQL](https://www.elephantsql.com/)
 
 ## Testing
 The website was tested for markup and CSS validation along with javascript, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
@@ -535,17 +537,17 @@ Please see screenshots of the results below:
 
 
 ### Responsiveness Testing
-- The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
+- The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. It was also tested on a real mobile phone (Samsung A53) to look for display problems on the smaller screen.
 #### Chrome Developer tools
 - A variety of screen sizes were checked for responsiveness using the Developer tools from 4K displays at 2560px wide, laptop sizes 1440px and 1024px, tablets at 768px, and a variety of mobile sizes down to 320px width. All elements maintained functionality and visibility in all scenarios, however, there were some issues with responsiveness on images on the actor_detail page on smaller devices.
 - A Lighthouse report was run several times to gauge the performance, accessibility, best practice and SEO scores. 
 
 #### Lighthouse Scoring
 
- - [Lighthouse scoring Homepage Desktop](./media/images/homepage_lighthouse_results_dsktp.jpg)
- - [Lighthouse scoring Post Detail Desktop](./media/images/post_detail_lighthouse_results_dsktp.jpg)
- - [Lighthouse scoring Actor List Desktop](./media/images/actor_list_lighthouse_results_dsktp.jpg)
- - [Lighthouse scoring Actor Detail Desktop](./media/images/actor_detail_lighthouse_results_dsktp.jpg)
+ - [Lighthouse scoring Homepage Desktop](./media/readme_images/homepagelighthouse_desktop1.jpg)
+ - [Lighthouse scoring Products Desktop](./media/readme_images/productpagelighthouse_desktop2.jpg)
+ - [Lighthouse scoring Homepage Mobile](./media/readme_images/homepagelighthouse_mobile1.jpg)
+ - [Lighthouse scoring Products Mobile](./media/readme_images/productpagelighthouse_mobile1.jpg)
 
 
 ### Accessibility Testing
@@ -634,4 +636,3 @@ The live link can be found here - https://guitar-world-58b9d23ae102.herokuapp.co
 
 ## Acknowledgements
  - Roman Rakic for his assistance
- - 
