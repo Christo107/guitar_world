@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://guitar-world-58b9d23ae102.herokuapp.com/sitemap.xml
