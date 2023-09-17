@@ -29,6 +29,8 @@ The live website on Github can be accessed at the following link: [View my Live 
     *  [Admin](#admin)   
 * [User Experience](#user-experience)
     *  [User Stories](#user-stories)
+* [Marketing](#marketing)
+    *  [Social Media](#social-media)
 * [Design](#design)
     *  [Colour Palette](#colour-palette)
     *  [Typography](#typography)
@@ -283,25 +285,49 @@ The live website on Github can be accessed at the following link: [View my Live 
 - **Product Wishlist** 
     - As a Site User, I can save a particular product to look at later in a wishlist
 
+## Marketing
 
+### Social Media
+- A facebook page was created as a way to reach a bigger audience.
+- The page contains the main details of the business, along with posts on the products available.
+- It will remain an important part of the marketing strategy of Guitar World
+- Future creation of an Instagram and TikTok account proposed.
+[Facebook page link](https://www.facebook.com/profile.php?id=61551557630644)
+<details>
+<summary>Facebook page screenshots</summary>
+
+![Facebook screenshot 1](./media/readme_images/Facebookpage1.jpg)
+![Facebook screenshot 1](./media/readme_images/Facebookpage2.jpg)
+</details>
 
 ## Design
 
 ### Colour Palette
 
-![Colour palette for the website]()
-
+The website uses a simple clean black and white colour palette which allows the product images to stand out and entice the customer to purchase.
 
 ### Typography
 - Verdana font used for review content for readability
 - Lato font used for headers and prominent titles
 
 ### Wireframes
-- I designed the website firstly through hand drawn sketches that were then turned into basic wireframes on Figma.
+- I designed the website firstly through hand drawn sketches that were then turned into basic wireframes on Canva.
 
-- [Desktop Wireframe](./media)
+<details>
+<summary>Desktop Wireframe images</summary>
 
-- [Mobile Wireframe](./media)
+- ![Homepage Desktop Wireframe](./media/readme_images/wireframes_prototypes/homepage_desktop_wireframe.jpg)
+- ![Shop By Category Desktop Wireframe](./media/readme_images/wireframes_prototypes/shopbycategory_desktop_wireframe.jpg)
+- ![Products Page Desktop Wireframe](./media/readme_images/wireframes_prototypes/productpage_desktop_wireframe.jpg)
+</details>
+
+<details>
+<summary>Mobile Wireframes images</summary>
+
+- ![Homepage Mobile Wireframe](./media/readme_images/wireframes_prototypes/hompeage_mobile_wireframe.jpg)
+- ![Shop by Category Mobile Wireframe](./media/readme_images/wireframes_prototypes/shopbycategory_mobile_wireframe.jpg)
+- ![Products Page Mobile Wireframe](./media/readme_images/wireframes_prototypes/productspage_mobile_wireframe.jpg)
+</details>
 
 ### Accessibility
 
@@ -550,10 +576,20 @@ The live link can be found here - https://guitar-world-58b9d23ae102.herokuapp.co
 
 ## Bugs
 ### Fixed Bugs
-- 
+- **Navbar styling on small mobile.**
+    - navbar icons were wrapping to next line on small mobile screens. Fixed by changing padding in media query
+- **Product Reviews not appearing on Product Detail page.**
+    - syntax in views and models was incorrect. Fixed with help from Roman Rakic on Slack.
+- **Footer not displaying fulll page width on some pages**
+    - Changed max-width property on footer
 
 ### Known Bugs
-- 
+- **Product pagination non-functioning**
+    - paginating the product list was not working correctly, and is awaiting fix for next deployment(code removed for submission)
+- **Edit and Delete reviews**
+    - Admin should have the functionality to edit and delete reviews on the frontend. This is not working at present.(code removed for submission)
+- **Approve reviews**
+    - Admin should have the functionality to approve reviews before they are listed on the frontend. This is not working at present.
 ## Credits
 
 ### Code
@@ -561,7 +597,7 @@ The live link can be found here - https://guitar-world-58b9d23ae102.herokuapp.co
 
 ### Content
 
-- The text content of the website was taken from the 
+- The text content of the website was taken from the Thomann, Gear4Music and Guitar Noise website.
 - The social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
