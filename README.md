@@ -42,6 +42,7 @@ The live website on Github can be accessed at the following link: [View my Live 
     *  [Newsletter](#newsletter-signup)
 * [Design](#design)
     *  [Database Schema](#database-schema)
+    *  [Agile](#Agile methodologies)
     *  [Colour Palette](#colour-palette)
     *  [Typography](#typography)
     *  [Imagery](#imagery)
@@ -322,6 +323,10 @@ The live website on Github can be accessed at the following link: [View my Live 
 
 [Database Schema](./media/readme_docs/Database%20Schema.pdf)
 </details>
+
+### Agile Methodologies
+- Github Projects was used to keep track of the various Epics, User Stories and progress of the prject.
+- The project can be found here (https://github.com/users/Christo107/projects/3)
 
 ### Colour Palette
 
