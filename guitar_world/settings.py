@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = False
 
 ALLOWED_HOSTS = ['guitar-world-58b9d23ae102.herokuapp.com', 'localhost',
-                 '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io']
+                 '8000-christo107-guitarworld-ch5h12k9b9r.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -123,7 +123,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'guitar_world.wsgi.application'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu104.gitpod.io',
+    'https://8000-christo107-guitarworld-ch5h12k9b9r.ws-eu105.gitpod.io',
     'https://guitar-world-58b9d23ae102.herokuapp.com/']
 
 # Database
